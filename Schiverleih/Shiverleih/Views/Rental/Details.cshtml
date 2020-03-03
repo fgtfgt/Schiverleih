@@ -1,0 +1,50 @@
+﻿@model Shiverleih.Models.shop.ViewModels.RentalDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RentalDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalPricePerDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentalPricePerDay)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RentalID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
